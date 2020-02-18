@@ -36,29 +36,17 @@
     <main>
         <h2>Últimos <span>doadores</span></h2>
 
+            {% for donor in donors%}
         <section class="donors">
             <div class="donor">
 
-                <div class="blood">AB+</div>
-                <p>Ramon Tavares</p>
-            </div>
-            <div class="donor">
-
-                <div class="blood">O+</div>
-                <p>Joana Mendonça</p>
-            </div>
-            <div class="donor">
-
-                <div class="blood">A-</div>
-                <p>Emeson Silva</p>
+                <div class="blood">{{donor.blood}}</div>
+                <p>{{donor.name}}</p>
             </div>
 
-            <div class="donor">
-
-                <div class="blood">AB-</div>
-                <p>Patricia Dias</p>
-            </div>
-            
+            {%endfor%}
+          
+           
             
         </section>
     </main>
