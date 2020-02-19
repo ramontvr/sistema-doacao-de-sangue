@@ -155,13 +155,16 @@ form button {
 
 .donor p {
     margin-top: 24px;
-    font-size: 14px;;
+
+    margin-bottom: 64px;
+    font-size: 14px;
 }
 
 
 /*FOOTER*/
 footer {
     margin-top: auto;
+    
     padding: 16px;
 
     border: 1px solid #eee;
